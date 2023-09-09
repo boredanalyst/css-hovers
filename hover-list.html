@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Basic Hovers</title>
+        <meta charset="utf-8">
+        <style>
+            * {
+                background-color:white;
+                color:black;
+                transition:all ease-in-out 300ms;
+            }
+
+            article {
+                width:50%;
+                margin:auto;
+            }
+
+            main {
+                display:flex;
+            }
+
+            h1 {
+                font-size:10vh;
+                margin-bottom:0;
+            }
+
+            section h1 + i {
+                font-style:italic;
+                font-size:1.5vh;
+            }
+
+            ul {
+                list-style:none;
+            }
+
+            li {
+                margin:2vh 0;
+                font-size:3vh;
+                background-color:pink;
+                padding:1vh;
+                max-width:8%;
+                overflow:hidden;
+                white-space:nowrap;
+            }
+
+            li:hover {
+                max-width:100%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <article>
+                <section class="intro-head">
+                    <h1>Hover Resizing</h1>
+                    <i>You can resize list items to expose text.</i>
+                </section>
+                <ul>
+                    <li>CH1: Introduction</li>
+                    <li>CH2: Review of Related Literature</li>
+                    <li>CH3: Proposed Methodology</li>
+                </ul>
+            </article>
+        </main>
+    </body>
+</html>
