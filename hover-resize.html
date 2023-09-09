@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>Basic Hovers</title>
+        <meta charset="utf-8">
+        <style>
+            * {
+                background-color:white;
+                color:black;
+                transition:all ease-in-out 150ms;
+            }
+
+            article {
+                width:50%;
+                margin:auto;
+            }
+
+            main {
+                display:flex;
+            }
+
+            h1 {
+                font-size:10vh;
+                margin-bottom:0;
+            }
+
+            section h1 + i {
+                font-style:italic;
+                font-size:1.5vh;
+            }
+
+            span {
+                background-color:pink;
+                width:100%;
+                height:20vh;
+                display:inline-block;
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                margin:5vh 0;
+                font-size:3vh;
+            }
+            span:hover {
+                height:30vh;
+            }
+
+            span.horizontal {
+                background-color:yellow;
+                width:50%;
+                height:20vh;
+                display:inline-block;
+                display:flex;
+                justify-content: center;
+                align-items:center;
+                margin:5vh 0;
+                font-size:3vh;
+            }
+
+            span.horizontal:hover {
+                width:100%;
+            }
+
+        </style>
+    </head>
+    <body>
+        <main>
+            <article>
+                <section class="intro-head">
+                    <h1>Hover Resizing</h1>
+                    <i>You can resize objects upon hover.</i>
+                </section>
+                <span>
+                    Come Hover Here!
+                </span>
+
+                <span class="horizontal">
+                    Come Hover Here Too!
+                </span>
+            </article>
+        </main>
+    </body>
+</html>
